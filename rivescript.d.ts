@@ -35,7 +35,7 @@ declare module "rivescript" {
 
 		loadFile(paths: string[], loadingDone?: (batchNumber: number) => void, loadingError?: (error: Error, batchNumber: number) => void): Promise<any>;
 
-		stream(code: string, onError: (error: string) => void): boolean;
+		stream(code: string, onError?: (error: string) => void): boolean;
 
 		sortReplies();
 
